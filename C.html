@@ -3,17 +3,6 @@
     <head>
         <title>What is the CSS</title>
         <meta charset="utf-8">
-        <p>
-            <!-- Global site tag (gtag.js) - Google Analytics. 방문자 조회수 확인하기 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FN5TPPR225"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FN5TPPR225');
-</script>
-        </p>
     </head>
     <body>
         <h1><strong>CSS</strong></h1>
@@ -28,39 +17,56 @@ The name cascading comes from the specified priority scheme to determine which s
 The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.[5]
 
 In addition to HTML, other markup languages support the use of CSS including XHTML, plain XML, SVG, and XUL.
-<div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://smk-90-disqus-com.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <p>
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/62cfe8557b967b1179997e21/1g7u2744v';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-    </p>
+</p>
+<style>
+    a {
+        color:black;
+        text-decoration:none;
+    }
+    ul,ol {
+        color:black;
+    }
+    h1 {
+        font-size:45px; 
+        text-align:center;
+    }
+    #active {
+        color:red;
+    }
+    .saw {
+        color:gray;
+    }
+</style><!--이것은 스타일 태그, 밑줄없음-->
+<!--active가 saw보다 뒤에 써져서 회색이 아니라 빨간색으로 표기된 것. 만약 순서를 바꾼다면 회색으로 표기됨-->
+<!--하지만 id태그와 #을 쓴다면 순서에 관계없이 id태그가 더 강한 권한을 갖는다.-->
+<!--id선택자[단, 아이디 값은 단 한가지만 사용가능] > 클래스 선택자 > 태그 선택자(예를 들어 a), 자세한 설명은 https://www.youtube.com/watch?v=8-rCMmamtDE&list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B&index=7 강의를 참고-->
+
+<h2 style="text-align:center; color:blue">목차</h2>
+<ol><!--ordered list-->
+    <li><a href="https://opentutorials.org/course/3084" target="_blank" title="생활코딩" >HTML Lecture</a></li>
+    <ul><!--unordered list-->
+        <li><a href="./H.html" target="_blank" title="내 폴더의 HTMl정의" class="saw"><!--<font color="red">HTML이란?</font>-->HTML이란?</a></li>
+    </ul>
+        <img src="./img/html.jpg" width="150" height="100">
+    <li><a href="https://opentutorials.org/course/3086" target="_blank" title="생활코딩" >CSS Lecture</a></li>
+    <ul>
+        <li><a href="./C.html" target="_blank" title="내 폴더의 CSS정의" class="saw" id="active"><!--<font color="red">CSS란?</font>-->CSS란?</a></li>
+    </ul>
+        <img src="./img/css.jpg" width="150" height="100">
+    <li><a href="https://nomadcoders.co/javascript-for-beginners" target="_blank" title="노마드 무료강의" >Vanila JavaScript</a></li>
+    <ul>
+        <li><a href="./JS.html" target="_blank" title="내 폴더의 JS정의" class="saw"><!--<font color="red">Java Script란?</font>-->Java Script란?</a></li>
+    </ul>
+        <img src="./img/js.jpeg" width="150" height="100">
+    <li><a href="https://digiconfactory.tistory.com/entry/%EC%9E%90%EB%B0%94-%EB%AC%B4%EB%A3%8C-%ED%95%99%EC%8A%B5-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%9E%85%EB%AC%B8-%EC%9E%90%EB%B0%94-%EB%8F%85%ED%95%99%ED%95%98%EA%B8%B0" target="_blank" title="강의 추천모음" >Java</a></li>
+    <ul>
+        <li><a href="Java.html" target="_blank" title="내 폴더의 Java정의" class="saw"><!--<font color="red">Java란?</font>-->Java란?</a></li>
+    </ul>
+        <img src="./img/java.jpg" width="150" height="100">
+</ol>
+<ul>
+    <li><a href="https://www.acmicpc.net/" target="_blank" title="백준 테스트">Algorithm Test</a></li>
+    <li><a href="https://www.w3schools.com/" target="_blank" title="코드 검색">W3School</a></li>
+</ul>
     </body>
 </html>

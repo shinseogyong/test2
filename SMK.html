@@ -3,42 +3,47 @@
     <head>
         <title>SMK Second Homepage</title><!--홈페이지 제목-->
         <meta charset="utf-8">
-        <p>
-            <!-- Global site tag (gtag.js) - Google Analytics. 방문자 조회수 확인하기 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FN5TPPR225"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FN5TPPR225');
-</script>
-        </p>
     </head>
     <body>
+        <style>
+            a {
+                color:black;
+                text-decoration:none;
+            }
+            ul,ol {
+                color:black;
+            }
+            h1 {
+                font-size:45px; 
+                text-align:center;
+            }
+            .saw {
+                color:gray;
+            }
+        </style><!--이것은 스타일 태그, 밑줄없음-->
         <h1><a href="https://www.jobkorea.co.kr/goodjob/tip/view?News_No=18678&schCtgr=120002&Page=7" target="_blanck" title="What A Back End is">BackEnd</a>Study Homepage</h1>
         <img src="./img/backend.avif" width="150" height="100">
-        <h2>Welcome to my second IT Leaning homepage</h2>
+        <h2 style="text-decoration:underline">Welcome to my second IT Leaning homepage</h2><!--이것은 스타일 속성, 언더라인-->
         <p><u>Below is my task I'm Leaning</u></p>
         <ol><!--ordered list-->
-            <li><a href="https://opentutorials.org/course/3084" target="_blank" title="생활코딩">HTML Lecture</a></li>
+            <li><a href="https://opentutorials.org/course/3084" target="_blank" title="생활코딩" >HTML Lecture</a></li>
             <ul><!--unordered list-->
-                <li><a href="./H.html" target="_blank" title="내 폴더의 HTMl정의">HTML이란?</a></li>
+                <li><a href="./H.html" target="_blank" title="내 폴더의 HTMl정의" class="saw"><!--<font color="red">HTML이란?</font>-->HTML이란?</a></li>
             </ul>
                 <img src="./img/html.jpg" width="150" height="100">
-            <li><a href="https://opentutorials.org/course/3086" target="_blank" title="생활코딩">CSS Lecture</a></li>
+            <li><a href="https://opentutorials.org/course/3086" target="_blank" title="생활코딩" >CSS Lecture</a></li>
             <ul>
-                <li><a href="./C.html" target="_blank" title="내 폴더의 CSS정의">CSS란?</a></li>
+                <li><a href="./C.html" target="_blank" title="내 폴더의 CSS정의" class="saw"><!--<font color="red">CSS란?</font>-->CSS란?</a></li>
             </ul>
                 <img src="./img/css.jpg" width="150" height="100">
-            <li><a href="https://nomadcoders.co/javascript-for-beginners" target="_blank" title="노마드 무료강의">Vanila JavaScript</a></li>
+            <li><a href="https://nomadcoders.co/javascript-for-beginners" target="_blank" title="노마드 무료강의" >Vanila JavaScript</a></li>
             <ul>
-                <li><a href="./JS.html" target="_blank" title="내 폴더의 JS정의">Java Script란?</a></li>
+                <li><a href="./JS.html" target="_blank" title="내 폴더의 JS정의" class="saw"><!--<font color="red">Java Script란?</font>-->Java Script란?</a></li>
             </ul>
                 <img src="./img/js.jpeg" width="150" height="100">
-            <li><a href="https://digiconfactory.tistory.com/entry/%EC%9E%90%EB%B0%94-%EB%AC%B4%EB%A3%8C-%ED%95%99%EC%8A%B5-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%9E%85%EB%AC%B8-%EC%9E%90%EB%B0%94-%EB%8F%85%ED%95%99%ED%95%98%EA%B8%B0" target="_blank" title="강의 추천모음">Java</a></li>
+            <li><a href="https://digiconfactory.tistory.com/entry/%EC%9E%90%EB%B0%94-%EB%AC%B4%EB%A3%8C-%ED%95%99%EC%8A%B5-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%9E%85%EB%AC%B8-%EC%9E%90%EB%B0%94-%EB%8F%85%ED%95%99%ED%95%98%EA%B8%B0" target="_blank" title="강의 추천모음" >Java</a></li>
             <ul>
-                <li><a href="Java.html" target="_blank" title="내 폴더의 Java정의">Java란?</a></li>
+                <li><a href="Java.html" target="_blank" title="내 폴더의 Java정의" class="saw"><!--<font color="red">Java란?</font>-->Java란?</a></li>
             </ul>
                 <img src="./img/java.jpg" width="150" height="100">
         </ol>
@@ -91,6 +96,6 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
-        </p>
+        </p>    
     </body>
 </html>
